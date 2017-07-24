@@ -1,2 +1,2 @@
-#Привет!
-##Сайт для Ditect Group
+# Привет!
+* Сайт для [Ditect Group](http://ditect.ru).
