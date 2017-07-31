@@ -1,0 +1,24 @@
+.page-header {
+  .container();
+  background: #282f39;
+
+  &__logo {
+    display: block;
+    text-align: center;
+    padding: 10px 0 7px 0;
+  }
+
+  &__logo-mobile:hover {
+    color: #00c2ff;
+  }
+
+  &__logo-mobile:active {
+    opacity: 0.3;
+  }
+}
+
+@media @tablet-widths  {
+  .page-header {
+    display: none;
+  }
+}

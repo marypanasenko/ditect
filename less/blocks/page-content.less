@@ -1,0 +1,143 @@
+.page-content {
+  .container();
+  min-height: 410px;
+  background-image: url("../img/background-mobile@1x.jpg");
+
+  @media @retina {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
+
+
+  &__company-description {
+    width: 260px;
+
+    margin: 0 auto;
+    padding: 32px 0 0 0;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #282f39;
+  }
+
+  &__company-name {
+    display: none;
+  }
+
+  &__message {
+    display: block;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: #282f39;
+
+  }
+
+  &__border {
+    margin: 45px auto 0 auto;
+    padding: 26px 23px;
+
+    width: 221px;
+    min-height: 103px;
+
+    text-align: center;
+    box-sizing: border-box;
+
+    border: 7px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__timer {
+    display: none;
+  }
+  &__timer-message {
+    display: none;
+  }
+}
+@media @tablet-widths {
+  .page-content {
+    padding: 0 50px;
+    min-height: 511px;
+    background-image: url("../img/background-tablet@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/background-tablet@2x.jpg");
+    }
+
+    &__company-description {
+      width: 350px;
+      font-size: 16px;
+    }
+    &__company-name {
+      display: block;
+      margin: 20px 0 0 0;
+      text-align: center;
+
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: @dark-blue;
+    }
+
+    &__border {
+      margin: 45px auto 0 auto;
+      padding: 0;
+
+      width: 450px;
+
+      font-size: 36px;
+      line-height: 42px;
+
+      border: 15px solid #ffffff;
+    }
+
+    &__message {
+      padding: 50px 80px 10px 80px;
+      margin: 0;
+      font-family: "Roboto";
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 42px;
+      color: #282f39;
+    }
+
+    &__timer {
+      display: block;
+      width: 400px;
+      margin: 20px 0;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-content {
+    padding: 0 50px;
+    min-height: 734px;
+    background-image: url("../img/background-desktop@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/background-desktop@2x.jpg");
+    }
+
+    &__company-description {
+      width: 1050px;
+
+      font-size: 21px;
+    }
+
+    &__company-name {
+      margin: 35px 0 0 0;
+      font-size: 36px;
+    }
+
+    &__border {
+      margin: 95px auto 0 auto;
+    }
+    &__message {
+      margin: 0 auto;
+    }
+  }
+}
