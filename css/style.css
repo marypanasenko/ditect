@@ -3,18 +3,6 @@
   margin: 0 auto;
   background: #282f39;
 }
-@media (min-width: 768px) {
-  .page-header {
-    width: 668px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1150px) {
-  .page-header {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
 .page-header__logo {
   display: block;
   text-align: center;
@@ -26,33 +14,11 @@
 .page-header__logo-mobile:active {
   opacity: 0.3;
 }
-@media (min-width: 768px) {
-  .page-header {
-    display: none;
-  }
-}
 .page-content {
   width: 320px;
   margin: 0 auto;
   min-height: 410px;
   background-image: url("../img/background-mobile@1x.jpg");
-}
-@media (min-width: 768px) {
-  .page-content {
-    width: 668px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1150px) {
-  .page-content {
-    width: 1050px;
-    margin: 0 auto;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .page-content {
-    background-image: url("../img/background-mobile@2x.jpg");
-  }
 }
 .page-content__company-description {
   width: 260px;
@@ -91,96 +57,10 @@
 .page-content__timer-message {
   display: none;
 }
-@media (min-width: 768px) {
-  .page-content {
-    padding: 0 50px;
-    min-height: 511px;
-    background-image: url("../img/background-tablet@1x.jpg");
-  }
-  .page-content__company-description {
-    width: 350px;
-    font-size: 16px;
-  }
-  .page-content__company-name {
-    display: block;
-    margin: 20px 0 0 0;
-    text-align: center;
-    font-weight: bold;
-    font-size: 27px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #282f39;
-  }
-  .page-content__border {
-    margin: 45px auto 0 auto;
-    padding: 0;
-    width: 450px;
-    font-size: 36px;
-    line-height: 42px;
-    border: 15px solid #ffffff;
-  }
-  .page-content__message {
-    padding: 50px 80px 10px 80px;
-    margin: 0;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 42px;
-    color: #282f39;
-  }
-  .page-content__timer {
-    display: block;
-    width: 400px;
-    margin: 20px 0;
-  }
-}
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .page-content {
-    background-image: url("../img/background-tablet@2x.jpg");
-  }
-}
-@media (min-width: 1150px) {
-  .page-content {
-    padding: 0 50px;
-    min-height: 734px;
-    background-image: url("../img/background-desktop@1x.jpg");
-  }
-  .page-content__company-description {
-    width: 1050px;
-    font-size: 21px;
-  }
-  .page-content__company-name {
-    margin: 35px 0 0 0;
-    font-size: 36px;
-  }
-  .page-content__border {
-    margin: 95px auto 0 auto;
-  }
-  .page-content__message {
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .page-content {
-    background-image: url("../img/background-desktop@2x.jpg");
-  }
-}
 .page-footer {
   width: 320px;
   margin: 0 auto;
   background: #282f39;
-}
-@media (min-width: 768px) {
-  .page-footer {
-    width: 668px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 1150px) {
-  .page-footer {
-    width: 1050px;
-    margin: 0 auto;
-  }
 }
 .page-footer__logo {
   display: none;
@@ -198,35 +78,6 @@
   font-weight: normal;
   color: #ffffff;
   text-decoration: none;
-}
-@media (min-width: 768px) {
-  .page-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 50px;
-    margin: 0 auto;
-  }
-  .page-footer__logo {
-    display: block;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .page-footer__tel {
-    margin: 0;
-    width: auto;
-    border-bottom: none;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
 }
 .social-link {
   font-size: 0;
@@ -254,14 +105,6 @@
   width: 131px;
   margin: 0 auto;
   padding: 15px 0;
-}
-@media (min-width: 768px) {
-  .social-links {
-    margin: 0;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
 }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -690,4 +533,143 @@ body {
   color: black;
   font-style: normal;
   font-weight: normal;
+}
+@media (min-width: 768px) {
+  .page-header {
+    width: 668px;
+    margin: 0 auto;
+  }
+  .page-header {
+    display: none;
+  }
+  .page-content {
+    width: 668px;
+    margin: 0 auto;
+  }
+  .page-content {
+    padding: 0 50px;
+    min-height: 511px;
+    background-image: url("../img/background-tablet@1x.jpg");
+  }
+  .page-content__company-description {
+    width: 350px;
+    font-size: 16px;
+  }
+  .page-content__company-name {
+    display: block;
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #282f39;
+  }
+  .page-content__border {
+    margin: 45px auto 0 auto;
+    padding: 0;
+    width: 450px;
+    font-size: 36px;
+    line-height: 42px;
+    border: 15px solid #ffffff;
+  }
+  .page-content__message {
+    padding: 50px 80px 10px 80px;
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42px;
+    color: #282f39;
+  }
+  .page-content__timer {
+    display: block;
+    width: 400px;
+    margin: 20px 0;
+  }
+  .page-footer {
+    width: 668px;
+    margin: 0 auto;
+  }
+  .page-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+  .page-footer__logo {
+    display: block;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .page-footer__tel {
+    margin: 0;
+    width: auto;
+    border-bottom: none;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .social-links {
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .page-content {
+    background-image: url("../img/background-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1150px) {
+  .page-header {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  .page-content {
+    width: 1050px;
+    margin: 0 auto;
+  }
+  .page-content {
+    padding: 0 50px;
+    min-height: 734px;
+    background-image: url("../img/background-desktop@1x.jpg");
+  }
+  .page-content__company-description {
+    width: 1050px;
+    font-size: 21px;
+  }
+  .page-content__company-name {
+    margin: 35px 0 0 0;
+    font-size: 36px;
+  }
+  .page-content__border {
+    margin: 95px auto 0 auto;
+  }
+  .page-content__message {
+    margin: 0 auto;
+  }
+  .page-footer {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .page-content {
+    background-image: url("../img/background-desktop@2x.jpg");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-content {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
 }
