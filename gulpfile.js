@@ -13,7 +13,15 @@ var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 
-
+gulp.task("symbols", function() {
+  return gulp.src("img/icons/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("symbols.svg"))
+    .pipe(gulp.dest("img"));
+});
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -49,16 +57,6 @@ gulp.task("images", function() {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
     ]))
-    .pipe(gulp.dest("img"));
-});
-
-galp.task("symbols", function() {
-  return gulp.src("img/icons/*.svg")
-    .pipe(svgmin())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("symbols.svg"))
     .pipe(gulp.dest("img"));
 });
 
