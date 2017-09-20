@@ -1,0 +1,41 @@
+{
+  "name": "ditect",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Сайт для Ditect Group",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marypanasenko/ditect.git"
+  },
+  "keywords": [
+    "ditect"
+  ],
+  "author": "Maria Panasenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marypanasenko/ditect/issues"
+  },
+  "homepage": "https://github.com/marypanasenko/ditect#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
+    "css-mqpacker": "^6.0.1",
+    "del": "^3.0.0",
+    "editorconfig-cli": "^0.2.1",
+    "grunt-csso": "^2.2.0",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "run-sequence": "^2.1.0"
+  }
+}

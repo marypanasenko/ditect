@@ -1,0 +1,170 @@
+.page-content {
+  min-height: 410px;
+
+  &__wrapper {
+    .container();
+  }
+
+  &__company-description {
+    width: 260px;
+
+    margin: 0 auto;
+    padding: 32px 0 0 0;
+    text-align: center;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #282f39;
+  }
+
+  &__company-name {
+    display: none;
+  }
+
+  &__message {
+    display: block;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    color: #282f39;
+
+  }
+
+  &__border {
+    margin: 45px auto 0 auto;
+    padding: 26px 23px;
+
+    width: 221px;
+    min-height: 103px;
+
+    text-align: center;
+    box-sizing: border-box;
+
+    border: 7px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__timer {
+    display: none;
+  }
+  &__timer-message {
+    display: none;
+  }
+}
+@media @mobile-widths-only {
+  .page-content {
+    background-image: url("../img/background-mobile@1x.jpg");
+    background-size: 700px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fcbfa4;
+  }
+  @media @retina {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
+}
+
+@media @tablet-widths {
+
+  .page-content {
+
+    min-height: 550px;
+    background-image: url("../img/background-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1150px auto;
+    background-color: #fcbfa4;
+
+    &__wrapper {
+      .container();
+    }
+
+    &__company-description {
+      width: 350px;
+      font-size: 16px;
+    }
+    &__company-name {
+      display: block;
+      margin: 20px 0 0 0;
+      text-align: center;
+
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: @dark-blue;
+    }
+
+    &__border {
+      margin: 45px auto 0 auto;
+      padding: 0;
+
+      width: 450px;
+
+      font-size: 36px;
+      line-height: 42px;
+
+      border: 15px solid #ffffff;
+    }
+
+    &__message {
+      padding: 50px 80px 50px 80px;
+      margin: 0;
+      font-family: "Roboto";
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 42px;
+      color: #282f39;
+    }
+
+    &__timer {
+      display: block;
+      width: 400px;
+      margin: 20px 0;
+    }
+  }
+  @media @retina {
+    background-image: url("../img/background-tablet@2x.jpg");
+  }
+}
+
+@media @desktop-widths {
+  @media @retina {
+    background-image: url("../img/background-desktop@2x.jpg");
+  }
+
+  .page-content {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1500px auto;
+    background-color: #fcbfa4;
+    min-height: 700px;
+    background-image: url("../img/background-desktop@1x.jpg");
+
+    &__wrapper {
+      .container;
+    }
+
+
+
+    &__company-description {
+      width: 1050px;
+
+      font-size: 21px;
+    }
+
+    &__company-name {
+      margin: 35px 0 0 0;
+      font-size: 36px;
+    }
+
+    &__border {
+      margin: 95px auto 0 auto;
+    }
+    &__message {
+      margin: 0 auto;
+    }
+  }
+}

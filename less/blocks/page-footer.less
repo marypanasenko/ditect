@@ -1,0 +1,47 @@
+.page-footer {
+  background: #282f39;
+  width: auto;
+
+  &__logo {
+    display: none;
+  }
+
+  &__tel {
+    width: 170px;
+    margin: 0 auto;
+    padding: 25px 0 16px 0;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  &__tel-link {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+@media @tablet-widths {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+    margin: 0 auto;
+
+    &__logo {
+      display: block;
+      order: 1;
+    }
+
+    &__tel{
+      margin: 0;
+      width: auto;
+      border-bottom: none;
+      order: 3;
+    }
+  }
+}
