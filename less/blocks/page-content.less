@@ -1,12 +1,9 @@
 .page-content {
-  .container();
   min-height: 410px;
-  background-image: url("../img/background-mobile@1x.jpg");
 
-  @media @retina {
-    background-image: url("../img/background-mobile@2x.jpg");
+  &__wrapper {
+    .container();
   }
-
 
   &__company-description {
     width: 260px;
@@ -56,14 +53,32 @@
     display: none;
   }
 }
-@media @tablet-widths {
+@media @mobile-widths-only {
   .page-content {
-    padding: 0 50px;
-    min-height: 511px;
-    background-image: url("../img/background-tablet@1x.jpg");
+    background-image: url("../img/background-mobile@1x.jpg");
+    background-size: 700px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fcbfa4;
+  }
+  @media @retina {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
+}
 
-    @media @retina {
-      background-image: url("../img/background-tablet@2x.jpg");
+@media @tablet-widths {
+
+  .page-content {
+
+    min-height: 550px;
+    background-image: url("../img/background-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1150px auto;
+    background-color: #fcbfa4;
+
+    &__wrapper {
+      .container();
     }
 
     &__company-description {
@@ -95,7 +110,7 @@
     }
 
     &__message {
-      padding: 50px 80px 10px 80px;
+      padding: 50px 80px 50px 80px;
       margin: 0;
       font-family: "Roboto";
       font-weight: bold;
@@ -110,17 +125,29 @@
       margin: 20px 0;
     }
   }
+  @media @retina {
+    background-image: url("../img/background-tablet@2x.jpg");
+  }
 }
 
 @media @desktop-widths {
+  @media @retina {
+    background-image: url("../img/background-desktop@2x.jpg");
+  }
+
   .page-content {
-    padding: 0 50px;
-    min-height: 734px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1500px auto;
+    background-color: #fcbfa4;
+    min-height: 700px;
     background-image: url("../img/background-desktop@1x.jpg");
 
-    @media @retina {
-      background-image: url("../img/background-desktop@2x.jpg");
+    &__wrapper {
+      .container;
     }
+
+
 
     &__company-description {
       width: 1050px;
