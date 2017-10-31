@@ -1,0 +1,18 @@
+.container() {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media @tablet-widths {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media @desktop-widths {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+}
+
+@retina: ~"(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

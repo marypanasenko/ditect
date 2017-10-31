@@ -1,0 +1,22 @@
+.page-header {
+  min-height: 66px;
+  background-color: @blue-base;
+  box-sizing: border-box;
+
+  &--shadow {
+    box-shadow: inset 0 -15px 20px -11px #1d1216;
+  }
+
+  &--noshadow {
+    box-sizing: none;
+  }
+}
+
+.page-header__wrapper {
+  .container();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+  position: relative;
+}

@@ -1,0 +1,47 @@
+.main-nav {
+  flex-basis: 260px;
+  order: 3;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+  display: block;
+  }
+}
+
+.main-nav__item {
+  text-align: center;
+  padding: 14px 0;
+  border-bottom: 1px solid @orange-base;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: @white-base;
+}
+
+.main-nav__toggler {
+  order: 2;
+  margin-left: auto;
+  font-size: 0;
+  border: none;
+  outline: none;
+}

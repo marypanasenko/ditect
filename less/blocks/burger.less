@@ -1,0 +1,20 @@
+.burger {
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  background: transparent;
+  position: relative;
+  padding-right: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 28px;
+    height: 2px;
+    background-color: @white-base;
+    box-shadow: 0 10px 0 0 @white-base, 0 20px 0 0 @white-base;
+  }
+}
