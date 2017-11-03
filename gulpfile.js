@@ -30,6 +30,20 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("style1", function() {
+  gulp.src("less/style.less")
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("css"))
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("css"))
+    .pipe(server.stream());
+});
+
 gulp.task("serve", function() {
   server.init({
     server: "build/",
@@ -81,6 +95,7 @@ gulp.task("build", function (done){
     "clean",
     "copy",
     "style",
+    "style1",
     "sprite",
     "html",
     done

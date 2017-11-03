@@ -1,4 +1,22 @@
 .header-logo {
   order: 1;
   margin-right: auto;
+
+  @media @tablet-widths {
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.header-logo__img {
+  @media @tablet-widths {
+    display: block;
+    width: 140px;
+    height: 40px;
+  }
+
+  @media @desktop-widths {
+    width: 220px;
+    height: 63px;
+  }
 }

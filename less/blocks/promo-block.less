@@ -4,17 +4,61 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 44% top;
+
+  @media @tablet-widths {
+    height: 540px;
+    background-image: url("../img/background-tablet.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media @desktop-widths {
+    height: 900px;
+    background-image: url("../img/background-desktop.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+.promo-block__wrapper {
+  .container();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
 }
 
 .promo-block__svg {
-  .container();
   display: block;
+  margin: 0 auto;
+  width: 146px;
+  height: 106px;
+
+  @media @tablet-widths {
+    width: 217px;
+    height: 158px;
+    padding: 0 40px 0 0;
+  }
+
+  @media @desktop-widths {
+    width: 339px;
+    height: 247px;
+    padding-left: 65px;
+  }
 }
 
 .promo-block__header {
-  .container();
   padding: 60px 0 35px 0;
-  text-align: center;
+  margin: 0 auto;
   font-size: 27px;
   line-height: 34px;
   text-transform: uppercase;
@@ -24,11 +68,25 @@
   &--orange {
     color: @orange-base;
   }
+
+  @media @tablet-widths {
+    padding: 85px 0 0;
+    font-size: 77px;
+    line-height: 120px;
+  }
+
+  @media @desktop-widths {
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 100px;
+    line-height: 170px;
+    font-weight: 900;
+  }
 }
 
 .promo-block__text {
-  .container();
-  padding: 30px 30px 100px;
+  padding: 30px 30px 80px;
   text-align: center;
   font-size: 16px;
   line-height: 18px;
@@ -38,8 +96,65 @@
   &--orange {
     color: @orange-base;
   }
+
+  @media @tablet-widths {
+    width: 370px;
+    text-align: right;
+    padding: 50px 20px 150px 0;
+    margin: 0;
+    font-size: 22px;
+    line-height: 38px;
+    box-sizing: border-box;
+  }
+
+  @media @desktop-widths {
+    width: 529px;
+    font-size: 33px;
+    line-height: 52px;
+    padding-top: 90px;
+  }
 }
 
 .promo-block__button {
-  width: 130px;
+  width: 160px;
+  position: relative;
+  margin: 0 auto;
+  font-weight: 400;
+  padding: 8px 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    top: 30%;
+    right: 10px;
+
+    @media @tablet-widths {
+      top: 31%;
+      right: 13px;
+    }
+
+    @media @desktop-widths {
+      background-size: contain;
+      width: 17px;
+      height: 17px;
+      top: 32%;
+    }
+  }
+
+  @media @tablet-widths {
+    width: 195px;
+  }
+
+  @media @desktop-widths {
+    width: 270px;
+    padding: 10px 30px;
+  }
+}
+
+.promo-block__button:active::after {
+  opacity: 0.3;
 }

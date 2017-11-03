@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Ditect Group Сервисная организация</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="img/favicon.ico" sizes="64x64" type="image/x-icon">
@@ -17,7 +17,7 @@
       <div class="page-header__wrapper">
         <a class="header-logo" href="#">
           <picture>
-            <source media="(min-width:1400px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width:1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
             <img class="header-logo__img" src="img/logo-mobile.svg" alt="Логотип Дитект Груп" width="37" height="35">
           </picture>
@@ -39,18 +39,36 @@
           </ul>
         </nav>
         <button class="main-nav__toggler burger" type="button">Меню</button>
+        <a class="phone-number" href="tel:+79780103355">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/phone-number.svg">
+            <source media="(min-width:768px)" srcset="img/phone-number.svg">
+            <img class="phone-number__svg" src="img/phone-number.svg" alt="+79780103355" width="134" height="33">
+          </picture>
+        </a>
       </div>
     </header>
     <main class="page-content">
       <section class="promo-block">
-        <h1 class="promo-block__header">Ditect <span class="promo-block__header--orange">Group</span></h1>
+        <div class="promo-block__wrapper">
+          <h1 class="promo-block__header">Ditect <span class="promo-block__header--orange">Group</span></h1>
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/gears-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/gears-tablet.svg">
+            <img class="promo-block__svg" src="img/gears-mobile.svg" alt="Сервисная компания" width="146" height="106">
+          </picture>
+          <p class="promo-block__text"><span class="promo-block__text--orange">обслуживание</span> предприятий торговли и питания</p>
+          <a class="promo-block__button button" href="tel:+79780103355">Вызов мастера</a>
+        </div>
+      </section>
+      <section class="services">
+        <h1 class="services__header">Наши услуги</h1>
+        <p class="services__text">Мы организуем безотказную работу вашего оборудования. Произведем монтаж, выполним техническое обслуживание, а если что-то поломается, в кратчайшие сроки проведем ремонт, подберем нужные запчасти и разработаем автоматику под конкретные задачи.</p>
         <picture>
-          <source media="(min-width:1400px)" srcset="img/gears-desktop.svg">
-          <source media="(min-width:768px)" srcset="img/gears-tablet.svg">
-          <img class="promo-block__svg" src="img/gears-mobile.svg" alt="Сервисная компания" width="146" height="106">
+          <source media="(min-width:1200px)" srcset="img/icon-tools-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/icon-tools-tablet.svg">
+          <img class="services__svg" src="img/icon-tools.svg" alt="Декоративный элемент - инструменты" width="26" height="26">
         </picture>
-        <p class="promo-block__text"><span class="promo-block__text--orange">обслуживание</span> предприятий торговли и питания</p>
-        <a class="promo-block__button button" href="tel:+79780103355">Вызов мастера</a>
       </section>
     </main>
     <footer class="page-footer">

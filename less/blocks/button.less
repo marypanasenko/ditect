@@ -1,7 +1,5 @@
 .button {
   display: block;
-  margin: 0 auto;
-  padding: 8px 15px;
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
@@ -11,4 +9,24 @@
   border-bottom: 5px solid @gray-dark;
   font-size: 11px;
   line-height: 18px;
+  white-space: normal;
+
+  &:hover {
+    background-color: #d36117;
+    border-bottom: 5px solid #4a525c;
+  }
+
+  &:active {
+    color: #e0905c;
+  }
+
+  @media @tablet-widths {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
