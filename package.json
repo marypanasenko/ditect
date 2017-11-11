@@ -4,7 +4,7 @@
     "IE 11",
     "Firefox ESR"
   ],
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Ditect",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "7.1.x",
@@ -26,7 +26,8 @@
     "run-sequence": "^2.2.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "swiper": "^4.0.5"
   },
   "editorconfig-cli": [
     "*.html",
@@ -47,5 +48,6 @@
     "stylelint": "stylelint 'less/**/*.less' --syntax less",
     "test": "npm run editorconfig && npm run stylelint"
   },
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "dependencies": {}
 }

@@ -30,20 +30,6 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("style1", function() {
-  gulp.src("less/style.less")
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest("css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css"))
-    .pipe(server.stream());
-});
-
 gulp.task("serve", function() {
   server.init({
     server: "build/",
@@ -79,7 +65,7 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function () {
@@ -90,12 +76,17 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("swipe", function () {
+  return gulp.src("css/swiper.min.css")
+    .pipe(gulp.dest("build/css"));
+});
+
 gulp.task("build", function (done){
   run(
     "clean",
     "copy",
+    "swipe",
     "style",
-    "style1",
     "sprite",
     "html",
     done

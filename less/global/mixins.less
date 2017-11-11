@@ -14,4 +14,21 @@
   }
 }
 
+.line() {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  background-color: @orange-base;
+  top: 50%;
+
+  @media @tablet-widths {
+    width: 70px;
+  }
+
+  @media @desktop-widths {
+    width: 100px;
+  }
+}
+
 @retina: ~"(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

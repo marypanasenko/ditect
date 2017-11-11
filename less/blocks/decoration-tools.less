@@ -1,0 +1,44 @@
+.decoration-tools {
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  background-image: url("../img/icon-tools.svg");
+  margin: 0 auto 25px;
+  background-repeat: no-repeat;
+
+  &::before {
+    .line();
+    left: -64px;
+
+    @media @tablet-widths {
+      left: -100px;
+    }
+
+    @media @desktop-widths {
+      left: -140px;
+    }
+  }
+
+  &::after {
+    .line();
+    right: -64px;
+
+    @media @tablet-widths {
+      right: -100px;
+    }
+
+    @media @desktop-widths {
+      right: -140px;
+    }
+  }
+
+  @media @tablet-widths {
+    margin: 0 auto 50px;
+  }
+
+  @media @desktop-widths {
+    width: 45px;
+    height: 45px;
+  }
+}
