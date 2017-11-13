@@ -127,9 +127,13 @@
             <h1 class="about-us__header section__header">О нашей компании</h1>
             <p class="about-us__subtitle section__subtitle">Команда образованных людей занимающаяся хорошим делом. Трудолюбиво, честно, весело.</p>
             <div class="decoration-tools"></div>
-            <p class="about-us__text">Становление нашей компании начинается с 2011 года.
-              Когда первый техник пришел в торговую организацию обслуживать и ремонтировать кофейные аппараты. С повышением уровня знаний и квалификации в сферу деятельности попало все больше обслуживаемого оборудования. Интересная работа собрала целую команду, котороя трудится сейчас под одним названием Дитект.
-              Значение слова Дитект олицетворяет самую важный важный этап работы, а именно диагностику оборудования, выявление скрытых дефектов (Di - Diagnostic, Tect - «tecte» (от латинского - скрыто, тайно, осторожно). Потому что именно через качественную диагностику можно быстро и надежно устранить поломку и выявить дальнейшие возможные технические проблемы. Своевременная диагностика, комплекс работ по техническому обслуживанию обеспечивают продолжительную работоспособность оборудования. Это и является нашим кредо.</p>
+            <div class="about-us__text-wrapper about-us__text-wrapper--closed about-us__text-wrapper--nojs">
+              <p class="about-us__text">Становление нашей компании начинается с 2011 года.
+                Когда первый техник пришел в <span class="about-us__fulltext about-us__fulltext--hidden about-us__fulltext--nojs">торговую организацию обслуживать и ремонтировать кофейныеаппараты. С повышением уровня знаний и квалификации в сферу деятельности попало все больше обслуживаемого оборудования. Интересная работа собрала целую команду, котороя трудится сейчас под одним названием Дитект.
+                Значение слова Дитект олицетворяет самую важный важный этап работы, а именно диагностику оборудования, выявление скрытых дефектов (Di - Diagnostic, Tect - «tecte» (от латинского - скрыто, тайно, осторожно). Потому что именно через качественную диагностику можно быстро и надежно устранить поломку и выявить дальнейшие возможные технические проблемы. Своевременная диагностика, комплекс работ по техническому обслуживанию обеспечивают продолжительную работоспособность оборудования. Это и является нашим кредо.</span>
+              </p>
+              <button class="about-us__button" type="button" name="button">Показать</button>
+            </div>
           </div>
           <picture>
             <source media="(min-width:1200px)" srcset="img/icon-automatic-desktop.jpg">
@@ -149,7 +153,7 @@
                 <svg class="brands-slide__svg brands-slide__lacimbali" width="70" height="16">
                   <use xlink:href="img/sprite.svg#icon-lacimbali"></use>
                 </svg>
-              <a class="brands-slide__link" href="#">
+              <a class="brands-slide__link" href="https://www.rational-online.com/ru_ru/customerservice/technical_support/rsp_map_1.php?searchType=2&location=%D0%9A%D0%B5%D1%80%D1%87%D1%8C">
                 <svg class="brands-slide__svg brands-slide__rational" width="70" height="16" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    viewBox="0 0 2426.5 605.1" style="enable-background:new 0 0 2426.5 605.1;" xml:space="preserve">
                 <path class="brands-slide__rational--blue" d="M2426.5,457.3c0,40.8-16.6,77.7-43.4,104.5c-27.7,27.8-65.3,43.3-104.5,43.3H147.8
@@ -182,8 +186,16 @@
             <div class="swiper-slide">Slide 3</div>
           </div>
           <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next">
+            <svg class="swiper-button-next__svg" width="30" height="50">
+              <use xlink:href="img/sprite.svg#icon-button-next"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-prev">
+            <svg class="swiper-button-prev__svg" width="30" height="50">
+              <use xlink:href="img/sprite.svg#icon-button-prev"></use>
+            </svg>
+          </div>
         </div>
       </section>
     </main>
@@ -191,6 +203,7 @@
     </footer>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> -->
     <script src="js/main-nav.js"></script>
+    <script src="js/about-us.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
     var swiper = new Swiper('.swiper-container', {
