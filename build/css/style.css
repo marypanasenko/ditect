@@ -1420,14 +1420,14 @@ body {
   background-image: url("../img/icon-arrow-down.svg");
 }
 .about-us__button--up {
+  background-image: url("../img/icon-arrow-up.svg");
   -webkit-animation: rotate-open 0.8s;
           animation: rotate-open 0.8s;
-  background-image: url("../img/icon-arrow-up.svg");
 }
 .about-us__button--down {
+  background-image: url("../img/icon-arrow-down.svg");
   -webkit-animation: rotate-close 0.8s;
           animation: rotate-close 0.8s;
-  background-image: url("../img/icon-arrow-down.svg");
 }
 @media (min-width: 768px) {
   .about-us__button {
