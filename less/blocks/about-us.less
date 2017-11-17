@@ -1,12 +1,11 @@
 .about-us {
   background-color: @blue-base;
-
-
+  position: relative;
+  margin: 0;
 }
 
 .about-us__info {
   .container();
-  position: relative;
 }
 
 .about-us__header {
@@ -22,9 +21,11 @@
 }
 
 .about-us__text {
+  .container();
+  position: relative;
   padding: 10px 20px 40px;
   font-family: "Ubuntu", sans-serif;
-  margin: 0;
+  margin: 0 auto;
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
@@ -32,37 +33,35 @@
 }
 
 .about-us__text-wrapper {
+  display: block;
+  background-color: @blue-base;
+  vertical-align: top;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 620px;
+    height: 20px;
+    box-shadow: 0px -11px 20px 0px #212639;
+    background-color: @blue-base;
+  }
+
   &--nojs {
     height: auto;
   }
 
   &--closed {
-    height: 100px;
+    height: 80px;
     overflow: hidden;
-    animation: close 0.6s;
+    animation: close 0.8s;
   }
 
   &--opened {
-    height: auto;
-    animation: bounce 0.6s;
-  }
-}
-
-.about-us__fulltext {
-  padding-bottom: 40px;
-
-  &--hidden {
-    display: none;
-
-  }
-
-  &--opened {
-    display: block;
-    animation: bounce 0.6s;
-  }
-
-  &--nojs {
-    display: block;
+    height: 590px;
+    overflow: hidden;
+    animation: open 1s;
   }
 }
 
@@ -71,67 +70,58 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  margin: 10px;
   border-radius: 25px;
-  background-color: #ffffff;
-  bottom: 10px;
-  right: 0;
-  order: 3;
+  bottom: 35px;
+  right: 5%;
+  order: 5;
   font-size: 0;
   border: 0;
   outline: none;
+  background-color: #ffffff;
+  background-image: url("../img/icon-arrow-down.svg");
 
-  &::before {
-    position: absolute;
-    order: 0;
-    content: "";
-    width: 200px;
-    height: 20px;
-    background-color: @blue-base;
-    bottom: -20px;
-    right: 90px;
-    box-shadow: 0 -25px 30px 20px @blue-base;
+  &--up {
+    animation: rotate-open 0.8s;
+    background-image: url("../img/icon-arrow-up.svg");
+
   }
+
+  &--down {
+    animation: rotate-close 0.8s;
+    background-image: url("../img/icon-arrow-down.svg");
+
+  }
+
 
   @media @tablet-widths {
     display: none;
   }
 }
 
-@keyframes bounce {
-  0%   {
-    transform: translate(0, -10%);
-    opacity: 0;
+@keyframes open {
+  from {
+    height: 80px;
   }
-  50%  {
-    transform: translateX(0, -8%);
-    opacity: 0.4;
-  }
-  70%  {
-    transform: translateX(0, -5%);
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateX(0, -1%);
-    opacity: 1;
+  to {
+    height: 590px;
   }
 }
 
 @keyframes close {
-  100% {
-    transform: translateX(0, 100%);
-    opacity: 1;
+  from {
+    height: 590px;
   }
-  70%  {
-    transform: translateX(0, 80%);
-    opacity: 0.7;
+  to {
+    height: 80px;
   }
-  50%  {
-    transform: translateX(0, 70%);
-    opacity: 0.4;
-  }
-  0%   {
-    transform: translate(0, 10%);
-    opacity: 0;
-  }
+}
+
+@keyframes rotate-open {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes rotate-close {
+    from {transform:rotate(180deg);}
+    to {transform:rotate(0deg);}
 }
