@@ -1417,7 +1417,6 @@ body {
   border: 0;
   outline: none;
   background-color: #ffffff;
-  background-image: url("../img/icon-arrow-down.svg");
 }
 .about-us__button--up {
   background-image: url("../img/icon-arrow-up.svg");
