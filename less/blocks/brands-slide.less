@@ -1,11 +1,41 @@
 .brands-slide__svg {
+  display: block;
   fill: #c8c8c8;
-  vertical-align: middle;
-  padding: 10px 5px;
+  padding: 10px 5px 34px;
 }
-.brands-slide__link {
-  height: 80px;
-  font-size: 0;
+
+.brands-slide__gaggia {
+  &:hover {
+    fill: #E30613;
+  }
+}
+
+.brands-slide__sirman {
+  &:hover {
+    fill: #BB3D2B;
+  }
+}
+
+.brands-slide__jura {
+  &:hover {
+    fill: #E30613;
+  }
+}
+
+.brands-slide__unox {
+  &:hover {
+    fill: #000000;
+  }
+}
+.brands-slide__brema {
+  &:hover {
+    fill: #2461AA;
+  }
+}
+.brands-slide__robot-coupe {
+  &:hover {
+    fill: #000000;
+  }
 }
 .brands-slide__lacimbali {
   &:hover {
@@ -23,8 +53,96 @@
   }
 }
 
+.brands-slide__fagor:hover {
+  .brands-slide__fagor--red {
+    fill: #CC2229;
+  }
+
+  .brands-slide__fagor--black {
+    fill: #000000;
+  }
+}
+
 .brands-slide__saeco {
   &:hover {
     fill: #d71921;
+  }
+}
+
+.brands-slide__sinmag {
+  display: block;
+  width: 80px;
+  height: 62px;
+  margin: 0 5px 20px;
+  background-image: url("../img/logo-sinmag-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-image: url("../img/logo-sinmag-color-mobile.png");
+  }
+}
+
+.brands-slide__bongard {
+  display: block;
+  width: 80px;
+  height: 62px;
+  margin: 0 5px 20px;
+  background-image: url("../img/logo-bongard-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-image: url("../img/logo-bongard-color-mobile.png");
+  }
+}
+
+.brands-slide__bassanina {
+  display: block;
+  width: 80px;
+  height: 62px;
+  margin: 0 5px 20px;
+  background-image: url("../img/logo-bassanina-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-image: url("../img/logo-bassanina-color-mobile.png");
+  }
+}
+
+.brands-slide__mkn {
+  display: block;
+  width: 80px;
+  height: 62px;
+  margin: 0 5px 20px;
+  background-image: url("../img/logo-mkn-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-image: url("../img/logo-mkn-color-mobile.png");
+  }
+}
+
+.brands-slide__abat {
+  display: block;
+  width: 80px;
+  height: 62px;
+  margin: 0 5px 20px;
+  background-image: url("../img/logo-abat-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-image: url("../img/logo-abat-color-mobile.png");
+  }
+}
+
+.brands-slide__non-mobile {
+  display: none;
+
+  @media @tablet-widths {
+    display: block;
   }
 }
