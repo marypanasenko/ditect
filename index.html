@@ -50,7 +50,7 @@
       </div>
     </header>
     <main class="page-content">
-      <section class="promo-block">
+      <section class=" section promo-block">
         <div class="promo-block__wrapper">
           <h1 class="promo-block__header">Ditect <span class="promo-block__header--orange">Group</span></h1>
           <picture>
@@ -59,7 +59,7 @@
             <img class="promo-block__svg" src="img/gears-mobile.svg" alt="Сервисная компания" width="146" height="106">
           </picture>
           <p class="promo-block__subtitle"><span class="promo-block__subtitle--orange">обслуживание</span> предприятий торговли и питания</p>
-          <a class="promo-block__button button" href="tel:+79780103355">Вызов мастера</a>
+          <a class="promo-block__button button button__call" href="tel:+79780103355">Вызов мастера</a>
         </div>
       </section>
       <section class="services section">
@@ -141,7 +141,7 @@
           <button class="about-us__button about-us__button--down" type="button" name="button">Показать</button>
         </div>
       </section>
-      <section class="brands">
+      <section class="section brands">
         <h1 class="brands__header section__header">Бренды</h1>
         <p class="brands__subtitle section__subtitle">Для нас не бывает неважного оборудования</p>
         <div class="decoration-tools"></div>
@@ -258,7 +258,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="section advantages">
         <h1 class="advantages__header section__header">Преимущества работы с нами</h1>
         <p class="brands__subtitle section__subtitle">Для нас не бывает неважного оборудования</p>
         <div class="decoration-tools"></div>
@@ -284,7 +284,7 @@
           <p class="advantage__subtitle">Команда образованных людей занимающаяся хорошим делом.</p>
         </div>
       </section>
-      <section class="scheme-work">
+      <section class="section scheme-work">
         <div class="scheme-work__wrapper">
           <h1 class="scheme-work__header section__header">Схема работы</h1>
           <div class="decoration-tools"></div>
@@ -353,7 +353,7 @@
                       <use xlink:href="img/sprite.svg#icon-service-center"></use>
                     </svg>
                   </div>
-                <h2 class="scheme-work__title">Ремонт в сервичном центре</h2>
+                <h2 class="scheme-work__title">Ремонт в сервисном центре</h2>
               </div>
               <p class="scheme-work__text">Выполнение ремонтных работ</p>
               </div>
@@ -384,10 +384,48 @@
           </div>
         </div>
       </section>
+      <section class="section form-block">
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <h1 class="form__header section__header">Оставьте сообщение</h1>
+          <input class="form__input" type="text" name="name" placeholder="Имя" required>
+          <input class="form__input" type="text" name="phone" placeholder="Телефон">
+          <input class="form__input" type="text" name="email" placeholder="E-mail">
+          <textarea class="form__textarea" name="message" placeholder="Сообщение" required></textarea>
+          <input class="form__button button" type="submit" value="Отправить">
+        </form>
+      </section>
+      <section class="map section" id="map">
+      </section>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__button button button__call" href="tel:+79780103355">Вызов мастера</a>
+        <div class="social-links">
+          <a class="social-link social-link--instagram" href="#">Мы в Инстаграм
+            <svg class="social-link__svg" width="26" height="26">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a class="social-link social-link--facebook" href="#">Мы в Фейсбук
+            <svg class="social-link__svg" width="26" height="26">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="social-link social-link--youtube" href="#">Мы в Ютюб
+            <svg class="social-link__svg" width="26" height="26">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="contacts">
+          <a href="tel:+79780103355">+7978<span>0103355</span></a>
+          <a href="mailto:operator@ditect.ru">operator<span>@ditect.ru</span></a>
+          <a href="mailto:service@ditect.ru">service<span>@ditect.ru</span></a>
+        </div>
+      </div>
     </footer>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> -->
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/event_rollover.js" type="text/javascript"></script>
     <script src="js/main-nav.js"></script>
     <script src="js/about-us.js"></script>
     <script src="js/about-us-button.js"></script>
@@ -410,5 +448,7 @@
     <!-- <script src="js/gmap.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script src="js/svg4everybody-function.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/gmap.js"></script>
   </body>
 </html>
