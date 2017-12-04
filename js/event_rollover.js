@@ -21,7 +21,9 @@ function init() {
         center: [45.33039030, 36.45483855],
         zoom: 15,
         controls: ['zoomControl'],
-        behaviors: ['drag', 'MultiTouch']
+        behaviors: ['drag'],
+        behaviors: ['MultiTouch']
+
     });
 
     for (var i = 0; i < placemarks.length; i++) {
