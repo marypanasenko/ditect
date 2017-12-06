@@ -809,6 +809,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 44% top;
+  background-color: #212639;
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .promo-block {
