@@ -12,6 +12,7 @@
     document.createElement( "picture" );
   </script>
   <script src="js/picturefill.min.js" async=""></script> -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   </head>
   <body>
     <header class="page-header page-header--noshadow">
@@ -23,19 +24,19 @@
             <img class="header-logo__img" src="img/logo-mobile.svg" alt="Логотип Дитект Груп" width="37" height="35">
           </picture>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav" id="menu">
           <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Услуги</a>
+              <a class="main-nav__link" href="#services">Услуги</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Новости</a>
+              <a class="main-nav__link" href="#about-us">О нас</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">О нас</a>
+              <a class="main-nav__link" href="#scheme-work">Схема работы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Контакты</a>
+              <a class="main-nav__link" href="#map">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -44,7 +45,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/phone-number.svg">
             <source media="(min-width:768px)" srcset="img/phone-number.svg">
-            <img class="phone-number__svg" src="img/phone-number.svg" alt="+79780103355" width="134" height="33">
+            <img class="phone-number__svg" src="img/phone-number.svg" alt="+79780103355" width="110" height="33">
           </picture>
         </a>
       </div>
@@ -62,9 +63,9 @@
           <a class="promo-block__button button button__call" href="tel:+79780103355">Вызов мастера</a>
         </div>
       </section>
-      <section class="services section">
+      <section class="services section" id="services">
         <h1 class="services__header section__header">Наши услуги</h1>
-        <p class="services__subtitle section__subtitle">Наша цель организовать безотказую работу оборудования с продолжительным сроком службы.</p>
+        <p class="services__subtitle section__subtitle">Наша цель обеспечить безотказую работу оборудования и продлить ее срок службы.</p>
         <div class="decoration-tools"></div>
         <div class="services__blocks">
           <div class="service repair">
@@ -121,7 +122,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us section">
+      <section class="about-us section" id="about-us">
         <div class="about-us__wrapper">
           <div class="about-us__info">
             <h1 class="about-us__header section__header">О нашей компании</h1>
@@ -284,7 +285,7 @@
           <p class="advantage__subtitle">Команда образованных людей занимающаяся хорошим делом.</p>
         </div>
       </section>
-      <section class="section scheme-work">
+      <section class="section scheme-work" id="scheme-work">
         <div class="scheme-work__wrapper">
           <h1 class="scheme-work__header section__header">Схема работы</h1>
           <div class="decoration-tools"></div>
@@ -417,10 +418,10 @@
             </svg>
           </a>
         </div>
-        <div class="contacts">
-          <a href="tel:+79780103355">+7978<span>0103355</span></a>
-          <a href="mailto:operator@ditect.ru">operator<span>@ditect.ru</span></a>
-          <a href="mailto:service@ditect.ru">service<span>@ditect.ru</span></a>
+        <div class="contact">
+          <a class="contact__item" href="tel:+79780103355">+7&nbsp;978&nbsp;<span class="contact__item--orange">010&nbsp;33&nbsp;55</span></a>
+          <a class="contact__item" href="mailto:operator@ditect.ru"><span class="contact__item--orange">operator</span>@ditect.ru</a>
+          <a class="contact__item" href="mailto:service@ditect.ru"><span class="contact__item--orange">service</span>@ditect.ru</a>
         </div>
       </div>
     </footer>
@@ -444,6 +445,16 @@
             prevEl: '.swiper-button-prev',
           },
         });
+    </script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $("#menu").on("click","a", function (event) {
+          event.preventDefault();
+          var id  = $(this).attr('href'),
+              top = $(id).offset().top;
+          $('body,html').animate({scrollTop: top}, 1500);
+      });
+    });
     </script>
     <!-- <script src="js/gmap.js"></script>
     <script src="js/svg4everybody.min.js"></script>

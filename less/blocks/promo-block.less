@@ -1,9 +1,18 @@
 .promo-block {
-  height: 513px;
-  background-image: url("../img/background-mobile.jpg");
+  height: 512px;
+  background-image: url("../img/background-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 44% top;
+
+  @media @mobile-widths-only {
+  @media @retina-dpi, @retina-dpx {
+    background: #d5e3ec url("../img/background-mobile@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 44% top;
+    }
+  }
 
   @media @tablet-widths {
     height: 540px;

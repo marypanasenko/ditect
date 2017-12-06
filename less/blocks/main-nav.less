@@ -1,5 +1,6 @@
 .main-nav {
   order: 3;
+  align-self: flex-end;
   box-sizing: border-box;
 
   @media @tablet-widths {
@@ -29,10 +30,11 @@
   }
 
   @media @tablet-widths {
-    width: 260px;
+    width: 410px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -42,6 +44,9 @@
 }
 
 .main-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -54,7 +59,8 @@
 
   @media @tablet-widths {
     border: none;
-    width: 60px;
+    min-width: 85px;
+    padding: 0 20px;
   }
 
   @media @desktop-widths {
@@ -72,8 +78,8 @@
 
   @media @tablet-widths {
     display: block;
-    height: 80px;
     padding: 30px 0;
+    height: 80px;
     box-sizing: border-box;
 
     &:hover {

@@ -1,0 +1,33 @@
+.contact {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.contact__item {
+  text-align: right;
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 200;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-dot.svg");
+    background-repeat: no-repeat;
+    width: 7px;
+    height: 7px;
+    top: 40%;
+    left: 0;
+  }
+
+  &--orange {
+    color: @orange-base;
+  }
+}
