@@ -1311,7 +1311,7 @@ body {
 }
 .section__subtitle {
   text-align: center;
-  padding: 15px 80px;
+  padding: 0 80px;
   margin: 0 auto;
   font-family: "Ubuntu", sans-serif;
   font-size: 10px;

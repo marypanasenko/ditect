@@ -10,3 +10,5 @@ npm-debug.*
 Thumbs.db
 slider.html
 build/
+less/blocks/brands-sleder.less
+less/blocks/brands-sledes.less
