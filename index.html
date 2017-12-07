@@ -12,7 +12,7 @@
     document.createElement( "picture" );
   </script>
   <script src="js/picturefill.min.js" async=""></script> -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" defer></script>
   </head>
   <body>
     <header class="page-header page-header--noshadow">
@@ -128,11 +128,11 @@
             <h1 class="about-us__header section__header">О нашей компании</h1>
             <p class="about-us__subtitle section__subtitle">Команда образованных людей занимающаяся хорошим делом. Трудолюбиво, честно, весело.</p>
           </div>
-          <!-- <picture>
+          <picture>
             <source media="(min-width:1200px)" srcset="img/icon-automatic-desktop.jpg">
             <source media="(min-width:768px)" srcset="img/about-us-background.jpg">
             <img class="about-us__img" src="img/about-us-background.jpg" alt="Картинка о нас" width="700" height="438">
-          </picture> -->
+          </picture>
         </div>
         <div class="decoration-tools"></div>
         <div class="about-us__text-wrapper about-us__text-wrapper--closed about-us__text-wrapper--nojs">
@@ -288,7 +288,7 @@
       <section class="section scheme-work" id="scheme-work">
         <div class="scheme-work__wrapper">
           <h1 class="scheme-work__header section__header">Схема работы</h1>
-          <div class="decoration-tools"></div>
+          <div class="decoration-tools decoration-tools--nomargin"></div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide scheme-work__slide">
@@ -425,13 +425,13 @@
         </div>
       </div>
     </footer>
-    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/event_rollover.js" type="text/javascript"></script>
-    <script src="js/main-nav.js"></script>
-    <script src="js/about-us.js"></script>
-    <script src="js/about-us-button.js"></script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" defer></script>
+    <script src="js/event_rollover.js" type="text/javascript" defer></script>
+    <script src="js/main-nav.js" async></script>
+    <script src="js/about-us.js" defer></script>
+    <script src="js/about-us-button.js" defer></script>
     <script src="js/swiper.min.js"></script>
-    <script>
+    <script defer>
     var swiper = new Swiper('.swiper-container', {
           slidesPerView: 1,
           spaceBetween: 30,
@@ -446,7 +446,7 @@
           },
         });
     </script>
-    <script type="text/javascript">
+    <script type="text/javascript" defer>
      $(document).ready(function(){
       $("#menu").on("click","a", function (event) {
           event.preventDefault();
@@ -459,7 +459,5 @@
     <!-- <script src="js/gmap.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script src="js/svg4everybody-function.js"></script> -->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-    <script src="js/gmap.js"></script>
   </body>
 </html>

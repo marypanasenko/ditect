@@ -1,14 +1,14 @@
 .promo-block {
   height: 512px;
+  background-color: @blue-base;
   background-image: url("../img/background-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 44% top;
-  background-color: @blue-base;
 
   @media @mobile-widths-only {
   @media @retina-dpi, @retina-dpx {
-    background: #d5e3ec url("../img/background-mobile@2x.jpg");
+    background: url("../img/background-mobile@2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 44% top;
@@ -16,19 +16,25 @@
   }
 
   @media @tablet-widths {
-    height: 540px;
-    background-image: url("../img/background-tablet.jpg");
-    background-size: auto 100%;
+    height: 570px;
+    background-image: url("../img/background-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media @retina-dpi, @retina-dpx {
+      background-image: url("../img/background-tablet@2x.jpg");
+    }
   }
 
   @media @desktop-widths {
-    height: 900px;
-    background-image: url("../img/background-desktop.jpg");
-    background-size: auto 100%;
+    min-height: 700px;
+    background-image: url("../img/background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
+
+    @media @retina-dpi, @retina-dpx {
+      background-image: url("../img/background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -60,9 +66,9 @@
   }
 
   @media @desktop-widths {
-    width: 339px;
-    height: 247px;
-    padding-left: 65px;
+    width: 300px;
+    height: 220px;
+    padding-left: 90px;
   }
 }
 
@@ -88,9 +94,9 @@
   @media @desktop-widths {
     width: 100%;
     text-align: center;
-    padding-top: 150px;
-    font-size: 100px;
-    line-height: 170px;
+    padding-top: 110px;
+    font-size: 80px;
+    line-height: 120px;
     font-weight: 900;
   }
 }
@@ -110,7 +116,7 @@
   @media @tablet-widths {
     width: 370px;
     text-align: right;
-    padding: 50px 20px 100px 0;
+    padding: 50px 20px 130px 0;
     margin: 0;
     font-size: 22px;
     line-height: 38px;
@@ -118,11 +124,11 @@
   }
 
   @media @desktop-widths {
-    width: 529px;
-    font-size: 33px;
+    width: 500px;
+    font-size: 27px;
     line-height: 52px;
-    padding-top: 90px;
-    padding-bottom: 230px;
+    padding-top: 55px;
+    padding-bottom: 150px;
   }
 }
 
