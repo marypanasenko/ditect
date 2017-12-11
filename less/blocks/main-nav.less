@@ -30,7 +30,7 @@
   }
 
   @media @tablet-widths {
-    width: 410px;
+    width: 345px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,7 +46,6 @@
 .main-nav__item {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -59,8 +58,15 @@
 
   @media @tablet-widths {
     border: none;
-    min-width: 85px;
-    padding: 0 20px;
+    padding: 0;
+    height: 110px;
+    min-width: 80px;
+    box-sizing: border-box;
+
+    &:hover {
+      border-bottom: 4px solid @orange-base;
+      box-sizing: border-box;
+    }
   }
 
   @media @desktop-widths {
@@ -78,13 +84,9 @@
 
   @media @tablet-widths {
     display: block;
-    padding: 30px 0;
-    height: 80px;
+    width: 65px;
+    padding: 43px 0;
     box-sizing: border-box;
-
-    &:hover {
-      border-bottom: 4px solid @orange-base;
-    }
   }
 }
 

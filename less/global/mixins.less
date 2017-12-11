@@ -14,12 +14,29 @@
   }
 }
 
-.line() {
+.orange-line() {
   position: absolute;
   content: "";
   width: 45px;
   height: 2px;
   background-color: @orange-base;
+  top: 50%;
+
+  @media @tablet-widths {
+    width: 70px;
+  }
+
+  @media @desktop-widths {
+    width: 100px;
+  }
+}
+
+.blue-line() {
+  position: absolute;
+  content: "";
+  width: 767px;
+  height: 2px;
+  background-color: @blue-light;
   top: 50%;
 
   @media @tablet-widths {

@@ -14,7 +14,7 @@
   <script src="js/picturefill.min.js" async=""></script> -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" defer></script>
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header page-header--noshadow">
       <div class="page-header__wrapper">
         <a class="header-logo" href="#">
@@ -45,7 +45,7 @@
           <picture>
             <source media="(min-width:1200px)" srcset="img/phone-number.svg">
             <source media="(min-width:768px)" srcset="img/phone-number.svg">
-            <img class="phone-number__svg" src="img/phone-number.svg" alt="+79780103355" width="110" height="33">
+            <img class="phone-number__svg" src="img/phone-number.svg" alt="+79780103355" width="125" height="35">
           </picture>
         </a>
       </div>
@@ -68,58 +68,34 @@
         <p class="services__subtitle section__subtitle">Наша цель обеспечить безотказую работу оборудования и продлить ее срок службы.</p>
         <div class="decoration-tools"></div>
         <div class="services__blocks">
-          <div class="service repair">
-            <picture>
-              <source media="(min-width:1200px)" srcset="img/icon-repair-desktop.svg">
-              <source media="(min-width:768px)" srcset="img/icon-repair.svg">
-              <img class="service__svg" src="img/icon-repair.svg" alt="Ремонт оборудования" width="53" height="54">
-            </picture>
+          <button class="service repair">
+            <img class="service__svg" src="img/icon-repair.svg" alt="Ремонт оборудования" width="53" height="54">
             <h2 class="service__header">Ремонт оборудования</h2>
-            <button class="service__button" type="button" name="button">
-              <svg class="service__svg-dots" width="34px" height="8px">
-                <use xlink:href="img/sprite.svg#icon-service-button"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="service maintenance">
-            <picture>
-              <source media="(min-width:1200px)" srcset="img/icon-maintenance-desktop.svg">
-              <source media="(min-width:768px)" srcset="img/icon-maintenance-mobile.svg">
-              <img class="service__svg" src="img/icon-maintenance-mobile.svg" alt="Техническое обслуживание" width="60" height="52">
-            </picture>
+            <svg class="service__button service__svg-dots" width="34px" height="8px">
+              <use xlink:href="img/sprite.svg#icon-service-button"></use>
+            </svg>
+          </button>
+          <button class="service maintenance">
+            <img class="service__svg" src="img/icon-maintenance-mobile.svg" alt="Техническое обслуживание" width="60" height="52">
             <h2 class="service__header">Техническое обслуживание</h2>
-            <button class="service__button" type="button" name="button">
-              <svg class="service__svg-dots" width="34px" height="8px">
-                <use xlink:href="img/sprite.svg#icon-service-button"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="service install">
-            <picture>
-              <source media="(min-width:1200px)" srcset="img/icon-install-desktop.svg">
-              <source media="(min-width:768px)" srcset="img/icon-install-mobile.svg">
-              <img class="service__svg" src="img/icon-install-mobile.svg" alt="Установка и монтаж" width="58" height="58">
-            </picture>
+            <svg class="service__button service__svg-dots" width="34px" height="8px">
+              <use xlink:href="img/sprite.svg#icon-service-button"></use>
+            </svg>
+          </button>
+          <button class="service install">
+            <img class="service__svg" src="img/icon-install-mobile.svg" alt="Установка и монтаж" width="58" height="58">
             <h2 class="service__header">Монтаж оборудования</h2>
-            <button class="service__button" type="button" name="button">
-              <svg class="service__svg-dots" width="34" height="8">
-                <use xlink:href="img/sprite.svg#icon-service-button"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="service automatic">
-            <picture>
-              <source media="(min-width:1200px)" srcset="img/icon-automatic-desktop.svg">
-              <source media="(min-width:768px)" srcset="img/icon-automatic-mobile.svg">
-              <img class="service__svg" src="img/icon-automatic-mobile.svg" alt="Разработка автоматики" width="45" height="45">
-            </picture>
+            <svg class="service__button service__svg-dots" width="34" height="8">
+              <use xlink:href="img/sprite.svg#icon-service-button"></use>
+            </svg>
+          </button>
+          <button class="service automatic">
+            <img class="service__svg" src="img/icon-automatic-mobile.svg" alt="Разработка автоматики" width="45" height="45">
             <h2 class="service__header">Разработка автоматики</h2>
-            <button class="service__button" type="button" name="button">
-              <svg class="service__svg-dots" width="34px" height="8px">
-                <use xlink:href="img/sprite.svg#icon-service-button"></use>
-              </svg>
-            </button>
-          </div>
+            <svg class="service__button service__svg-dots" width="34px" height="8px">
+              <use xlink:href="img/sprite.svg#icon-service-button"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="about-us section" id="about-us">
@@ -128,24 +104,24 @@
             <h1 class="about-us__header section__header">О нашей компании</h1>
             <p class="about-us__subtitle section__subtitle">Команда образованных людей занимающаяся хорошим делом. Трудолюбиво, честно, весело.</p>
           </div>
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/icon-automatic-desktop.jpg">
-            <source media="(min-width:768px)" srcset="img/about-us-background.jpg">
-            <img class="about-us__img" src="img/about-us-background.jpg" alt="Картинка о нас" width="700" height="438">
-          </picture>
-        </div>
-        <div class="decoration-tools"></div>
-        <div class="about-us__text-wrapper about-us__text-wrapper--closed about-us__text-wrapper--nojs">
-          <p class="about-us__text">Становление нашей компании начинается с 2011 года.
+          <div class="decoration-tools"></div>
+          <div class="about-us__text-wrapper about-us__text-wrapper--closed about-us__text-wrapper--nojs">
+            <p class="about-us__text">Становление нашей компании начинается с 2011 года.
               Когда первый техник пришел в торговую организацию обслуживать и ремонтировать кофейныеаппараты. С повышением уровня знаний и квалификации в сферу деятельности попало все больше обслуживаемого оборудования. Интересная работа собрала целую команду, котороя трудится сейчас под одним названием Дитект.
               Значение слова Дитект олицетворяет самую важный важный этап работы, а именно диагностику оборудования, выявление скрытых дефектов (Di - Diagnostic, Tect - «tecte» (от латинского - скрыто, тайно, осторожно). Потому что именно через качественную диагностику можно быстро и надежно устранить поломку и выявить дальнейшие возможные технические проблемы. Своевременная диагностика, комплекс работ по техническому обслуживанию обеспечивают продолжительную работоспособность оборудования. Это и является нашим кредо.</p>
-          <button class="about-us__button about-us__button--down" type="button" name="button">Показать</button>
+            <button class="about-us__button about-us__button--down" type="button" name="button">Показать</button>
+          </div>
         </div>
+        <picture class="about-us__picture">
+          <source media="(min-width:1200px)" srcset="img/icon-automatic-desktop.jpg">
+          <source media="(min-width:768px)" srcset="img/about-us-background.jpg">
+          <img class="about-us__img" src="img/about-us-background.jpg" alt="Картинка о нас" width="700" height="438">
+        </picture>
       </section>
       <section class="section brands">
         <h1 class="brands__header section__header">Бренды</h1>
         <p class="brands__subtitle section__subtitle">Для нас не бывает неважного оборудования</p>
-        <div class="decoration-tools"></div>
+        <div class="decoration-lines"></div>
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide brands-slide">
@@ -425,9 +401,37 @@
         </div>
       </div>
     </footer>
+    <div class="modal-services">
+      <div class="modal-services__repair">
+        <button class="modal-services__button" type="button">Закрыть</button>
+        <h1 class="modal-services__header">Ремонт оборудования</h1>
+        <p class="modal-services__text">Становление нашей компании начинается с 2011 года.
+              Когда первый техник пришел в торговую организацию обслуживать и ремонтировать кофейныеаппараты. С повышением уровня знаний и квалификации в сферу деятельности попало все больше обслуживаемого оборудования. Интересная работа собрала целую команду, котороя трудится сейчас под одним названием Дитект.
+              Значение слова Дитект олицетворяет самую важный важный этап работы, а именно диагностику оборудования, выявление скрытых дефектов (Di - Diagnostic, Tect - «tecte» (от латинского - скрыто, тайно, осторожно). Потому что именно через качественную диагностику можно быстро и надежно устранить поломку и выявить дальнейшие возможные технические проблемы. Своевременная диагностика, комплекс работ по техническому обслуживанию обеспечивают продолжительную работоспособность оборудования. Это и является нашим кредо.</p>
+      </div>
+      <div class="modal-services__maintenance">
+        <h1 class="modal-services__header">Техническое обслуживание</h1>
+        <p class="modal-services__text">Становление нашей компании начинается с 2011 года.
+              Когда первый техник пришел в торговую организацию обслуживать и ремонтировать кофейныеаппараты. С повышением уровня знаний и квалификации в сферу деятельности попало все больше обслуживаемого оборудования. Интересная работа собрала целую команду, котороя трудится сейчас под одним названием Дитект.
+              Значение слова Дитект олицетворяет самую важный важный этап работы, а именно диагностику оборудования, выявление скрытых дефектов (Di - Diagnostic, Tect - «tecte» (от латинского - скрыто, тайно, осторожно). Потому что именно через качественную диагностику можно быстро и надежно устранить поломку и выявить дальнейшие возможные технические проблемы. Своевременная диагностика, комплекс работ по техническому обслуживанию обеспечивают продолжительную работоспособность оборудования. Это и является нашим кредо.</p>
+      </div>
+      <div class="modal-services__install">
+        <h1 class="modal-services__header">Монтаж оборудования</h1>
+        <p class="modal-services__text">Становление нашей компании начинается с 2011 года.
+              Когда первый техник пришел в торговую организацию обслуживать и ремонтировать кофейныеаппараты. С повышением уровня знаний и квалификации в сферу деятельности попало все больше обслуживаемого оборудования. Интересная работа собрала целую команду, котороя трудится сейчас под одним названием Дитект.
+              Значение слова Дитект олицетворяет самую важный важный этап работы, а именно диагностику оборудования, выявление скрытых дефектов (Di - Diagnostic, Tect - «tecte» (от латинского - скрыто, тайно, осторожно). Потому что именно через качественную диагностику можно быстро и надежно устранить поломку и выявить дальнейшие возможные технические проблемы. Своевременная диагностика, комплекс работ по техническому обслуживанию обеспечивают продолжительную работоспособность оборудования. Это и является нашим кредо.</p>
+      </div>
+      <div class="modal-services__automatic">
+        <h1 class="modal-services__header">Разработка автоматики</h1>
+        <p class="modal-services__text">Становление нашей компании начинается с 2011 года.
+              Когда первый техник пришел в торговую организацию обслуживать и ремонтировать кофейныеаппараты. С повышением уровня знаний и квалификации в сферу деятельности попало все больше обслуживаемого оборудования. Интересная работа собрала целую команду, котороя трудится сейчас под одним названием Дитект.
+              Значение слова Дитект олицетворяет самую важный важный этап работы, а именно диагностику оборудования, выявление скрытых дефектов (Di - Diagnostic, Tect - «tecte» (от латинского - скрыто, тайно, осторожно). Потому что именно через качественную диагностику можно быстро и надежно устранить поломку и выявить дальнейшие возможные технические проблемы. Своевременная диагностика, комплекс работ по техническому обслуживанию обеспечивают продолжительную работоспособность оборудования. Это и является нашим кредо.</p>
+      </div>
+    </div>
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" defer></script>
     <script src="js/event_rollover.js" type="text/javascript" defer></script>
     <script src="js/main-nav.js" async></script>
+    <script src="js/modal.js" async></script>
     <script src="js/about-us.js" defer></script>
     <script src="js/about-us-button.js" defer></script>
     <script src="js/swiper.min.js"></script>

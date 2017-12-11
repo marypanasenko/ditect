@@ -1,10 +1,17 @@
 .scheme-work {
-  min-height: 485px;
+  min-height: 510px;
   background-image: url("../img/background-scheme-withus-mobile@1x.jpg");
   background-color: #3e4253;
   background-position: center;
   background-repeat: no-repeat;
   padding: 0;
+
+  @media @mobile-widths-only {
+  @media @retina-dpi, @retina-dpx {
+    background: url("../img/background-scheme-withus-mobile@2x.jpg");
+    background-size: cover;
+    }
+  }
 }
 
 .scheme-work__container {
@@ -18,6 +25,8 @@
 
 .scheme-work__header {
   color: #ffffff;
+  padding-bottom: 20px;
+  padding-top: 25px;
 }
 
 .scheme-work__svgs {
@@ -61,14 +70,13 @@
 .scheme-work__title {
   width: 150px;
   margin: 0;
-  margin-bottom: 15px;
   color: #ffffff;
   font-size: 14px;
   line-height: 20px;
 }
 .scheme-work__text {
   width: 200px;
-  margin: 0 auto 45px;
+  margin: 8px auto 45px;
   font-size: 11px;
   line-height: 20px;
   color: #ffffff;

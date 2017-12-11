@@ -1,0 +1,17 @@
+.brands {
+  position: relative;
+
+  &::before {
+    .blue-line();
+    left: -30%;
+    top: 93%;
+
+    @media @tablet-widths {
+      left: -100px;
+    }
+
+    @media @desktop-widths {
+      left: -140px;
+    }
+  }
+}

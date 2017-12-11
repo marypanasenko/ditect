@@ -1,4 +1,4 @@
-.decoration-tools {
+.decoration-lines {
   display: block;
   width: 26px;
   height: 26px;
@@ -7,13 +7,10 @@
   margin: 20px auto;
   background-repeat: no-repeat;
 
-  &--nomargin {
-    margin: 0 auto;
-  }
 
   &::before {
-    .orange-line();
-    left: -64px;
+    .blue-line();
+    left: 55px;
 
     @media @tablet-widths {
       left: -100px;
@@ -25,8 +22,8 @@
   }
 
   &::after {
-    .orange-line();
-    right: -64px;
+    .blue-line();
+    right: 55px;
 
     @media @tablet-widths {
       right: -100px;
