@@ -1,27 +1,41 @@
 .modal-services {
   .container();
+  width: 280px;
 }
 
 .modal-services__repair {
-  width: 280px;
-  height: 500px;
+  width: 290px;
   margin: 0 auto;
+  z-index: 3;
   display: none;
-  position: fixed;
-  overflow: scroll;
   top: 10%;
-  left: 8%;
+  left: 0;
+  right: 0;
   background: #ffffff;
   padding: 30px;
   box-shadow: 0 0px 25px @blue-base;
+  box-sizing: border-box;
+  position: fixed;
 
   &--show {
     display: block;
   }
 }
 
+.modal-services__wrapper {
+  position: relative;
+}
+
+.modal-services__text {
+  overflow: scroll;
+  height: 300px;
+}
+
 .modal-services__button {
-  position: fixed;
-  right: 40px;
-  top: 100px;
+  display: block;
+  position: absolute;
+  z-index: 4;
+  background-color: #ffffff;
+  right: 5px;
+  top: 20px;
 }
