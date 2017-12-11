@@ -2156,10 +2156,13 @@ body {
 }
 .modal-services__repair {
   width: 280px;
+  height: 500px;
   margin: 0 auto;
-  display: block;
-  position: absolute;
-  top: 0;
+  display: none;
+  position: fixed;
+  overflow: scroll;
+  top: 10%;
+  left: 8%;
   background: #ffffff;
   padding: 30px;
   -webkit-box-shadow: 0 0px 25px #212639;
@@ -2167,6 +2170,11 @@ body {
 }
 .modal-services__repair--show {
   display: block;
+}
+.modal-services__button {
+  position: fixed;
+  right: 40px;
+  top: 100px;
 }
 .swiper-button-next {
   display: none;
